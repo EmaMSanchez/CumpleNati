@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+google-apps-script/*.local.gs
+.vercel/
+.netlify/
+.agents/
+.hallmark/
+skills-lock.json
+*.dpapi
+*.pem
+*.key
+*.p12
+*.pfx
+test-results/
+*.log
