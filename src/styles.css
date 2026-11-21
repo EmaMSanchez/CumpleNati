@@ -19,7 +19,7 @@ a:active, button:active { transform: translateY(1px); }
 .menu-toggle { display: none; border: 0; background: var(--color-transparent); color: var(--color-ink); width: 44px; height: 44px; place-items: center; border-radius: var(--radius-input); }
 .mobile-nav { display: flex; flex-direction: column; gap: var(--space-xs); padding-block: var(--space-sm); border-block: 1px solid var(--color-rule); }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: var(--space-sm); min-height: 52px; padding: 0 var(--space-lg); border: 1px solid var(--color-transparent); border-radius: var(--radius-pill); font-size: var(--text-md); font-weight: 600; text-decoration: none; white-space: nowrap; transition: transform var(--dur-micro) var(--ease-out); }
-.button-primary { background: var(--color-accent); color: var(--color-accent-ink); }
+.button-primary { background: var(--color-gold-light); color: var(--color-ink); }
 .button-secondary { background: var(--color-transparent); border-color: var(--color-gold); color: var(--color-gold); }
 .button:disabled { opacity: 0.55; cursor: not-allowed; }
 .hero { position: relative; }
@@ -31,12 +31,12 @@ a:active, button:active { transform: translateY(1px); }
 .hero-lead { font-size: var(--text-lead); line-height: 1.5; max-width: 28ch; margin-top: var(--space-md); margin-bottom: var(--space-lg); }
 .hero-art { position: relative; height: min(680px, 81svh); min-height: 500px; width: 100%; align-self: center; }
 .hero-color-field { position: absolute; width: 89%; height: 75%; bottom: 7%; left: 5%; border-radius: 48% 48% 25% 25%; background: var(--color-accent-2); transform: rotate(-5deg); }
-.hero-pink-orbit { position: absolute; width: 75%; height: 65%; bottom: 9%; left: 13%; border: 2px solid var(--color-accent); border-radius: 50%; transform: rotate(17deg); }
+.hero-gold-orbit { position: absolute; width: 75%; height: 65%; bottom: 9%; left: 13%; border: 2px solid var(--color-gold-light); border-radius: 50%; transform: rotate(17deg); }
 .hero-portrait { position: absolute; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
-.party-note { position: absolute; z-index: 3; top: 19%; right: -1%; color: var(--color-accent); background: var(--color-paper); padding: var(--space-md) var(--space-lg); font: 600 2.3rem/1 var(--font-display); letter-spacing: -0.04em; border: 2px solid var(--color-accent); border-radius: 44% 45% 42% 10%; transform: rotate(9deg); }
+.party-note { position: absolute; z-index: 3; top: 19%; right: -1%; color: var(--color-gold); background: var(--color-paper); padding: var(--space-md) var(--space-lg); font: 600 2.3rem/1 var(--font-display); letter-spacing: -0.04em; border: 2px solid var(--color-gold); border-radius: 44% 45% 42% 10%; transform: rotate(9deg); }
 .sparkle { width: 32px; height: 32px; color: var(--color-gold-light); flex-shrink: 0; }
 .hero-sparkle-one { position: absolute; z-index: 3; top: 6%; left: 11%; width: 48px; height: 48px; }
-.hero-sparkle-two { position: absolute; z-index: 3; top: 54%; right: -3%; width: 24px; height: 24px; color: var(--color-accent); }
+.hero-sparkle-two { position: absolute; z-index: 3; top: 54%; right: -3%; width: 24px; height: 24px; color: var(--color-gold); }
 .hero-baseline { position: absolute; display: flex; align-items: center; gap: var(--space-lg); width: 100%; padding-inline: var(--gutter); bottom: 0; }
 .hero-baseline span { height: 1px; flex: 1; background: var(--color-rule); }
 .hero-baseline .sparkle { width: 20px; height: 20px; }
@@ -57,9 +57,9 @@ a:active, button:active { transform: translateY(1px); }
 .confirmation-story h2 { max-width: 13ch; }
 .confirmation-story .lead { max-width: 29ch; margin-top: var(--space-lg); }
 .confirmation-photo { position: relative; width: min(100%, 420px); height: 360px; margin-top: var(--space-xl); }
-.confirmation-photo-field { position: absolute; left: 2%; bottom: 0; width: 88%; height: 88%; background: var(--color-pink-soft); border-radius: 50% 50% 28% 20%; transform: rotate(-5deg); }
+.confirmation-photo-field { position: absolute; left: 2%; bottom: 0; width: 88%; height: 88%; background: var(--color-gold-soft); border-radius: 50% 50% 28% 20%; transform: rotate(-5deg); }
 .confirmation-photo img { position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
-.confirmation-sparkle { position: absolute; right: 6%; top: 12%; color: var(--color-accent); z-index: 3; }
+.confirmation-sparkle { position: absolute; right: 6%; top: 12%; color: var(--color-gold); z-index: 3; }
 .form-sheet { border: 1px solid var(--color-rule); border-radius: var(--radius-card); padding: var(--space-xl); background: var(--color-paper-3); }
 .form-intro { color: var(--color-muted); font-size: var(--text-sm); margin-bottom: var(--space-lg); }
 .field label, .attendance-field legend { display: block; font-size: var(--text-md); font-weight: 600; margin-bottom: var(--space-xs); }
@@ -70,10 +70,10 @@ a:active, button:active { transform: translateY(1px); }
 .attendance-field { border: 0; padding: 0; margin: 0; min-width: 0; }
 .attendance-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-sm); }
 .attendance-option { min-height: 48px; display: flex; align-items: center; gap: var(--space-xs); padding: var(--space-xs) var(--space-md); border: 1px solid var(--color-field-border); border-radius: var(--radius-input); background: var(--color-paper); color: var(--color-ink); cursor: pointer; }
-.attendance-option input { accent-color: var(--color-accent); width: 16px; height: 16px; margin: 0; flex-shrink: 0; }
+.attendance-option input { accent-color: var(--color-gold); width: 16px; height: 16px; margin: 0; flex-shrink: 0; }
 .attendance-option input:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
 .attendance-option > svg { margin-left: auto; flex-shrink: 0; }
-.attendance-option.is-selected { background: var(--color-pink-soft); border-color: var(--color-accent); color: var(--color-accent); }
+.attendance-option.is-selected { background: var(--color-gold-soft); border-color: var(--color-gold); color: var(--color-ink); }
 .attendance-field:disabled .attendance-option { opacity: 0.55; cursor: not-allowed; }
 .guests-row { display: flex; align-items: center; gap: var(--space-md); }
 .guest-stepper { display: flex; height: 48px; }
@@ -112,7 +112,7 @@ a:active, button:active { transform: translateY(1px); }
 .map-controls button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--color-field-border); border-radius: var(--radius-input); background: var(--color-paper); color: var(--color-ink); }
 .map-attribution { position: absolute; z-index: 1000; bottom: var(--space-2xs); right: var(--space-md); min-height: 24px; padding: var(--space-3xs) var(--space-2xs); background: var(--color-paper); color: var(--color-ink); font-size: 12px; text-decoration: none; }
 .map-status, .map-fallback { position: absolute; z-index: 1001; left: var(--space-lg); right: var(--space-lg); top: var(--space-lg); padding: var(--space-md); border-radius: var(--radius-input); background: var(--color-paper); color: var(--color-ink); font-size: var(--text-sm); }
-.map-fallback a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-accent); }
+.map-fallback a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-gold); }
 .map-caption { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px; margin-top: var(--space-xs); font-size: var(--text-sm); text-decoration: none; }
 .site-footer { padding-block: var(--space-2xl); }
 .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -124,11 +124,11 @@ a:active, button:active { transform: translateY(1px); }
 @media (hover: hover) {
   .button:hover { transform: translateY(-2px); }
   .button:disabled:hover { transform: none; }
-  .desktop-nav a:hover, .mobile-nav a:hover, .wordmark:hover { color: var(--color-accent); }
+  .desktop-nav a:hover, .mobile-nav a:hover, .wordmark:hover { color: var(--color-gold); }
   .nav-rsvp:hover { background: var(--color-paper-2); }
   .menu-toggle:hover { background: var(--color-paper-2); }
   .field > input:hover, .guest-stepper button:hover:not(:disabled) { background: var(--color-paper-2); }
-  .attendance-option:hover { border-color: var(--color-accent); }
+  .attendance-option:hover { border-color: var(--color-gold); }
   .map-caption:hover, .footer-inner > a:hover { text-decoration: underline; }
   .map-toggle:hover { background: var(--color-paper-2); }
   .map-controls button:hover:not(:disabled) { background: var(--color-paper-2); }

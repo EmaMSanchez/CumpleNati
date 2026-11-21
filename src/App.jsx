@@ -54,7 +54,7 @@ function Hero() {
         </div>
         <div className="hero-art">
           <div className="hero-color-field" aria-hidden="true" />
-          <div className="hero-pink-orbit" aria-hidden="true" />
+          <div className="hero-gold-orbit" aria-hidden="true" />
           <Sparkle className="hero-sparkle-one" />
           <Sparkle className="hero-sparkle-two" />
           <img className="hero-portrait" src="/images/natalia-dj.webp" srcSet="/images/natalia-dj-small.webp 640w, /images/natalia-dj.webp 1100w" sizes="(max-width: 760px) 90vw, 50vw" alt="Natalia con auriculares y una mano en alto frente a la consola de DJ" width="1100" height="1372" fetchPriority="high" />
