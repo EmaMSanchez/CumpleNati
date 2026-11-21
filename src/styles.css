@@ -41,6 +41,30 @@ a:active, button:active { transform: translateY(1px); }
 .hero-baseline span { height: 1px; flex: 1; background: var(--color-rule); }
 .hero-baseline .sparkle { width: 20px; height: 20px; }
 
+@media (prefers-reduced-motion: no-preference) {
+  .site-header { animation: fade-in 420ms var(--ease-out) both; }
+  .hero-date { animation: rise-in 500ms var(--ease-out) 80ms both; }
+  .gold-fifty { animation: rise-in 600ms var(--ease-out) 140ms both; }
+  .invitation-name { animation: rise-in 550ms var(--ease-out) 220ms both; }
+  .hero-lead { animation: rise-in 500ms var(--ease-out) 300ms both; }
+  .invitation-copy .button { animation: rise-in 500ms var(--ease-out) 380ms both; }
+  .hero-color-field { animation: field-in 700ms var(--ease-out) 120ms both; }
+  .hero-portrait { animation: portrait-settle 900ms var(--ease-out) 200ms both; }
+  .hero-gold-orbit { animation: orbit-in 800ms var(--ease-out) 260ms both; }
+  .party-note { animation: note-in 520ms var(--ease-out) 460ms both; }
+  .hero-sparkle-one { animation: sparkle-in 500ms var(--ease-out) 640ms both; }
+  .hero-sparkle-two { animation: sparkle-in 500ms var(--ease-out) 720ms both; }
+  .hero-baseline { animation: fade-in 600ms var(--ease-out) 700ms both; }
+}
+
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } }
+@keyframes field-in { from { opacity: 0; transform: rotate(-5deg) scale(0.96); } }
+@keyframes portrait-settle { from { transform: scale(1.035); } }
+@keyframes orbit-in { from { opacity: 0; transform: rotate(17deg) scale(0.94); } }
+@keyframes note-in { from { opacity: 0; transform: rotate(3deg) scale(0.88); } }
+@keyframes sparkle-in { 0% { opacity: 0; transform: scale(0.4); } 65% { opacity: 1; transform: scale(1.12); } 100% { opacity: 1; transform: scale(1); } }
+
 .event-details { padding-block: var(--space-2xl); background: var(--color-paper-2); }
 .event-details h2 { font-size: var(--text-section); margin-bottom: var(--space-xl); }
 .event-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); margin: 0; }
